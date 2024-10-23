@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinak Idea Ltd assignment - Pranav Dhangar</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div 
+      class="assignment flex flex-col h-[500px] border  border-black border-solid m-12 w-[80%]"
+    >
+      <h1
+        class="heading ml-[50px] uppercase text-4xl font-medium m-4 z-10 text-white"
+      >
+        Our Services
+      </h1>
+
+      <div class="grid-cols-4 flex m-12 mt-20 gap-6">
+        <div
+          class="bg-white flex flex-col items-center px-3 py-[40px] h-[300px] text-wrap w-[350px] rounded-lg text-center relative shadow-lg"
+        >
+          <div class="absolute -top-[40px]">
+            <img
+              src="./images/servicelogo_plumbing-07d94f67-640w.webp"
+              class="h-[80px] rounded-full"
+              alt=""
+            />
+          </div>
+          <h2 class="inter text-xl font-bold text-wrap">
+            Emergency plumbing Services
+          </h2>
+          <p class="inter text-sm mt-3 text-gray-700">
+           Our plumbers are ready to go 24/7 for emergencies - including nights, weekends and holidays.
+          </p>
+          <a class="linked text-xl mt-4 uppercase font-semibold flex" href=""
+            >Explore this Service
+            <img
+              src="./images/right-arrow-backup-2-svgrepo-com.svg"
+              class="h-[15px] ml-1 mt-2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="bg-white flex flex-col items-center px-3 py-[40px] h-[300px] text-wrap w-[350px] rounded-lg text-center relative shadow-lg"
+        >
+          <div class="absolute -top-[40px]">
+            <img
+              src="./images/symbol-illustration-of-a-leaking-pipe-vector.jpg"
+              class="h-[80px] rounded-full"
+              alt=""
+            />
+          </div>
+          <h2 class="inter text-xl font-bold text-wrap">
+               Plumbing and Drains
+          </h2>
+          <p class="inter text-sm mt-3 text-gray-700">
+            As the largest plumbing and drain service company, we make thousand of repairs everyday.
+          </p>
+          <a class="linked text-xl mt-4 uppercase font-semibold flex" href=""
+            >Explore this Service
+            <img
+              src="./images/right-arrow-backup-2-svgrepo-com.svg"
+              class="h-[15px] ml-1 mt-2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="bg-white flex flex-col items-center px-3 py-[40px] h-[300px] text-wrap w-[350px] rounded-lg text-center relative shadow-lg"
+        >
+          <div class="absolute -top-[40px]">
+            <img
+              src="./images/water2.jpg"
+              class="h-[80px] rounded-full"
+              alt=""
+            />
+          </div>
+          <h2 class="inter text-xl font-bold text-wrap">
+            Water Damage
+          </h2>
+          <p class="inter text-sm mt-3 text-gray-700">
+            Our teams are equipped with state-of-the-art water extraction and cleanup equipement.
+          </p>
+          <a class="linked text-xl mt-4 uppercase font-semibold flex" href=""
+            >Explore this Service
+            <img
+              src="./images/right-arrow-backup-2-svgrepo-com.svg"
+              class="h-[15px] ml-1 mt-2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="bg-white flex flex-col items-center px-3 py-[40px] h-[300px] text-wrap w-[350px] rounded-lg text-center relative shadow-lg"
+        >
+          <div class="absolute -top-[40px]">
+            <img
+              src="./images/water-heater-icon-design-templates-simple-and-modern-concept-vector.jpg"
+              class="h-[80px] rounded-full"
+              alt=""
+            />
+          </div>
+          <h2 class="inter text-xl font-bold text-wrap">
+            Water Heaters
+          </h2>
+          <p class="inter text-sm mt-3 text-gray-700">
+            Trust Roto-Router for repair and replacement of gas, electric and tankless water heaters.
+          </p>
+          <a class="linked text-xl mt-4 uppercase font-semibold flex" href=""
+            >Explore this Service
+            <img
+              src="./images/right-arrow-backup-2-svgrepo-com.svg"
+              class="h-[15px] ml-1 mt-2"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+        const cards = document.querySelectorAll('.flex.flex-col.items-center'); // Target each card
+      
+        cards.forEach((card) => {
+          card.addEventListener('mouseenter', () => {
+            anime({
+              targets: card,
+              rotateY: '1turn', // Rotate 360 degrees on hover
+              duration: 1000, // Adjust duration (in milliseconds)
+              easing: 'easeInOutQuad', // Smooth animation
+            });
+          });
+      
+          card.addEventListener('mouseleave', () => {
+            anime({
+              targets: card,
+              rotateY: '0turn', // Return to original position on hover end
+              duration: 1000,
+              easing: 'easeInOutQuad',
+            });
+          });
+        });
+      </script>
+      
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  </body>
+</html>

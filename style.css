@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading{
+    
+  font-family: "Oswald", sans-serif;
+}
+
+.assignment {
+    background: linear-gradient(
+        160deg,  /* This angle creates the slant */
+        rgb(3, 3, 107) 50%, 
+        
+        rgb(234, 237, 236) 50%
+    );
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.inter{
+  font-family: "Inter", serif;
+}
+.linked{
+  font-family: "Oswald", sans-serif;
+  color: rgb(117, 14, 117);
+}
